@@ -10,8 +10,13 @@ export interface CustomButtonProps {
   btnType?: "button" | "submit";
 }
 
+export interface OptionProps{
+  title: string;
+  value:string;  
+}
 export interface CustomFilterProps {
   title: string;
+  options: OptionProps[]
 }
 export interface SearchManufacturerProps {
   manufacturer: string;
@@ -30,4 +35,16 @@ export interface CarProps {
   model: string;
   transmission: string;
   year: number;
+}
+export interface FilterProps {
+  model: string;
+  year: number;
+  manufacturer:string;
+  fuel:string;
+  limit: number;
+}
+
+export interface ShowMoreProps {
+  isNext: boolean;
+  pageNumber: number;
 }

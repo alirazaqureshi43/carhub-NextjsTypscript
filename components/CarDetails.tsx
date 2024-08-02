@@ -65,7 +65,7 @@ const CarDetails = ({isOpen, closeModal, car}:CarDetailsProps) => {
                     <div className="flex flex-1 flex-col gap-2">      
                    <h2 className="font-semibold text-xl capitalize">{car.make} {car.model}</h2>
                     </div>
-                    <div className="flex flex-wrap mt-3 gap-4">
+                    <div className="flex flex-wrap mt-3 gap-4 car-detail-div">
                         {
                             Object.entries(car).map(([key,value])=>(
                                 <div className="flex justify-between gap-5 w-full text-right">
